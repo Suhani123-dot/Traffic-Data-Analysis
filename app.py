@@ -26,7 +26,8 @@ data["Time_of_Day"] = le_time.fit_transform(data["Time_of_Day"])
 data["Congestion_Level"] = le_congestion.fit_transform(data["Congestion_Level"])
 
 # Load Model
-model = joblib.load("models/traffic_model.pkl")
+model_path = "models/traffic_model.pkl" if os.path.exists("models/traffic_model.pkl") else "traffic_model.pkl"
+model = joblib.load(model_path)
 
 st.title("🚦 Smart City Traffic Analytics System")
 

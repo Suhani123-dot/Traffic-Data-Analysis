@@ -13,8 +13,9 @@ st.sidebar.write("✔ Pandas")
 st.sidebar.write("✔ Scikit-Learn")
 st.sidebar.write("✔ Streamlit")
 # Load Dataset
-data = pd.read_csv("data/traffic_data.csv")
-
+import os
+csv_path = "data/traffic_data.csv" if os.path.exists("data/traffic_data.csv") else "traffic_data.csv"
+data = pd.read_csv(csv_path)
 # Encode data
 le_location = LabelEncoder()
 le_time = LabelEncoder()

@@ -1,0 +1,9 @@
+Location,Vehicle_Count,Average_Speed,Time_of_Day,Congestion_Level
+City Center,120,25,Morning,High
+Highway,80,60,Afternoon,Low
+Market,150,20,Evening,High
+School Zone,70,30,Morning,Medium
+Residential Area,40,45,Night,Low
+Bus Stand,110,22,Evening,High
+Railway Station,95,28,Afternoon,Medium
+Hospital Area,60,35,Night,Low
